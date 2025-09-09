@@ -11,10 +11,10 @@ st.title("Predikcija bolesti jetre")
 
 st.write("Unesi podatke pacijenta:")
 
-age = st.number_input("Starost", min_value=0, max_value=120, value=30)
+age = st.number_input("Starost", min_value=0, max_value=100, value=30)
 gender = st.selectbox("Pol", ["muški", "ženski"])
-bmi = st.number_input("BMI", min_value=10.0, max_value=60.0, value=25.0)
-alcohol = st.number_input("Konzumacija alkohola (0-100)", min_value=0.0, max_value=100.0, value=10.0)
+bmi = st.number_input("BMI", min_value=10.0, max_value=40.0, value=25.0)
+alcohol = st.number_input("Konzumacija alkohola (0-20)", min_value=0.0, max_value=20.0, value=10.0)
 smoking = st.selectbox("Pušenje", [0, 1])
 genetic_risk = st.selectbox("Genetski rizik", [0, 1, 2])
 physical_activity = st.number_input("Fizička aktivnost (0-10)", min_value=0, max_value=10, value=5)
